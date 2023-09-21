@@ -13,7 +13,7 @@ CIFAR10_DATA_DIR = "data/cifar10"
 def main(args):
     model = DiffusionRobustModel()
 
-    dataset = datasets.CIFAR10(CIFAR10_DATA_DIR, train=False, download=False, transform=transforms.ToTensor())
+    dataset = datasets.CIFAR10(CIFAR10_DATA_DIR, train=False, download=True, transform=transforms.ToTensor())
 
     # Get the timestep t corresponding to noise level sigma
     target_sigma = args.sigma * 2
