@@ -8,7 +8,7 @@ from core import Smooth
 from DRM import DiffusionRobustModel
 
 
-CIFAR10_DATA_DIR = "data/cifar10"
+CIFAR10_DATA_DIR = "/home/ymc5533/data/cifar"
 
 def main(args):
     model = DiffusionRobustModel()
