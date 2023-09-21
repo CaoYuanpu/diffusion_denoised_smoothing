@@ -5,7 +5,7 @@ import datetime
 from torchvision import transforms, datasets
 
 from core import Smooth 
-from DRM import DiffusionRobustModel
+from DRM_wideresnet import DiffusionRobustModel
 
 
 CIFAR10_DATA_DIR = "/data/yuanpu/cifar"

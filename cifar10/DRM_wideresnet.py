@@ -46,7 +46,7 @@ class DiffusionRobustModel(nn.Module):
 
         self.model = model 
         self.diffusion = diffusion 
-
+        print('Load Wideresnet-28-10...')
         # classifier = AutoModelForImageClassification.from_pretrained("aaraki/vit-base-patch16-224-in21k-finetuned-cifar10")
         classifier  = load_model(model_name='Standard', dataset='cifar10', threat_model='corruptions')
         classifier.eval().cuda()
